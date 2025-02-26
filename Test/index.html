@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grades System</title>
+</head>
+<body>
+    <h1>Student Grades System</h1>
+    
+    <!-- Form to input student information -->
+    <h2>Enter Student Information</h2>
+    <form id="studentForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br><br>
+
+        <label for="grade">Grade (1 to 5):</label>
+        <input type="number" id="grade" min="1" max="5" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <hr>
+
+    <h2>Statistics</h2>
+    <p id="statistics">Enter data to see the statistics.</p>
+
+    <script>
+        // Arrays to store student data
+        const students = [];
+
+        // Event listener for form submission
+        document.getElementById('studentForm').addEventListener('submit', function(event) {
+            event.preventDefault();  // Prevents page reload on form submission
+            
+            // Get values from form inputs
+            const name = document.getElementById('name').value;
+            const gender = document.getElementById('gender').value;
+            const grade = parseInt(document.getElementById('grade').value);
+
+            // Store student data
+            students.push({ name, gender, grade });
+
+            // Update the form for the next entry
+            document.getElementById('name').value = '';
+            document.getElementById('grade').value = '';
+            document.getElementById('gender').value = 'male';
+
+            // Calculate and display statistics
+            updateStatistics();
+        });
+
+        function updateStatistics() {
+            // Initialize counters for males and females per grade
+            let gradeCount = {
+                male: [0, 0, 0, 0, 0],  // Array to store male grade counts for each grade (1-5)
+                female: [0, 0, 0, 0, 0]  // Array to store female grade counts for each grade (1-5)
+            };
+            let totalMale = 0;
+            let totalFemale = 0;
+
+            // Loop through all students and count grades and genders
+            students.forEach(student => {
+                if (student.gender === 'male') {
+                    totalMale++;
+                    gradeCount.male[student.grade - 1]++; // Increment the count for the grade
+                } else if (student.gender === 'female') {
+                    totalFemale++;
+                    gradeCount.female[student.grade - 1]++; // Increment the count for the grade
+                }
+            });
+
+            // Calculate and display percentages
+            let output = `<strong>Total Students:</strong> ${students.length}<br>`;
+            output += `<strong>Total Males:</strong> ${totalMale}, <strong>Total Females:</strong> ${totalFemale}<br><br>`;
+            output += `<strong>Grade Statistics (Male and Female by Grade 1-5):</strong><br>`;
+
+            // Calculate and display percentage for each grade for males and females
+            for (let i = 0; i < 5; i++) {
+                const maleCount = gradeCount.male[i];
+                const femaleCount = gradeCount.female[i];
+                
+                const malePercentage = totalMale > 0 ? (maleCount / totalMale) * 100 : 0;
+                const femalePercentage = totalFemale > 0 ? (femaleCount / totalFemale) * 100 : 0;
+
+                output += `
+                    <br><strong>Grade ${i + 1}:</strong><br>
+                    Males: ${maleCount} (${malePercentage.toFixed(2)}%)<br>
+                    Females: ${femaleCount} (${femalePercentage.toFixed(2)}%)<br>
+                `;
+            }
+
+            // Display the statistics
+            document.getElementById('statistics').innerHTML = output;
+        }
+    </script>
+</body>
+</html>
