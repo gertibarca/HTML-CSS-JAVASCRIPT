@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Informacionet Personale</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+
+        </fieldset>
+
+        <label>Kursi:</label><br>
+        <input type="checkbox" id="html" name="kursi" value="html">
+        <label for="html">HTML</label><br>
+
+        <input type="checkbox" id="css" name="kursi" value="css">
+        <label for="css">CSS</label><br>
+
+        <input type="checkbox" id="java" name="kursi" value="java">
+        <label for="java">Java</label><br><br>
+
+        <label for="pet">Zgjedh kafshen e preferuar:</label><br>
+        <select id="pet" name="pet">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="bird">Bird</option>
+            <option value="rabbit">Rabbit</option>
+        </select><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="10" cols="20"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <article>
+        <h2>Titulli</h2>
+        <p>
+            This is a sample paragraph that provides detailed information about the form and its contents. The form is designed to collect personal information, including the user's name, surname, email address, and password. Additionally, the form asks for gender, preferred courses, favorite pet, and a message that the user might want to send. The form elements include text inputs, radio buttons, checkboxes, a select dropdown, and a textarea. By submitting the form, the user provides all the required details, which will be processed accordingly.
+        </p>
+    </article>
+
+    <details>
+        <summary>Digital School</summary>
+        <p>
+            Digital School is an online platform dedicated to offering digital courses and tutorials for students of all ages. It provides comprehensive courses on web development, programming, graphic design, and much more. Whether you're looking to learn HTML, CSS, JavaScript, or want to dive deeper into the world of technology, Digital School has something for everyone. Join today and start learning at your own pace.
+        </p>
+    </details>
+</body>
+</html>
