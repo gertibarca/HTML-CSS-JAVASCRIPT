@@ -1,0 +1,61 @@
+
+body {
+    background-image: url(image.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+p {
+    color: #333;
+    font-size: 30px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+p:first-of-type {
+    color: red;
+    font-size: 50px;
+}
+
+h1 {
+    color: #000000;
+    font-size: 2.2rem;
+    line-height: 1.5;
+    margin: 50px auto;
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(0, 188, 212, 0.1);
+    border-radius: 10px;
+}
+
+div {
+    background-color: #0000ff;
+    height: auto;
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: justify;
+    border: 5px solid #ffffff; /
+}
