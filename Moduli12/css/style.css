@@ -1,0 +1,106 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9; 
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-family: 'Georgia', serif;
+    font-size: 3rem;
+    color: #2c3e50;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+    line-height: 1.3;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    letter-spacing: 20px;
+}
+
+
+p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+    text-indent: 30px;
+    margin-bottom: 15px;
+}
+
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    text-decoration: overline;
+    color: #e74c3c; 
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+h3 {
+    text-decoration: line-through;
+    color: #3498db; 
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+h4 {
+    text-decoration: underline;
+    color: #2ecc71; 
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+
+@font-face {
+    font-family: "Test Font";
+    src: url("fonts/AnthonioScript.ttf");
+}
+
+
+.myElement {
+    font-family: "Test Font", cursive;
+    font-size: 2.5rem;
+    color: #8e44ad; 
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem; 
+    }
+
+    p {
+        font-size: 1rem; 
+    }
+
+    .myElement {
+        font-size: 2rem; 
+    }
+}
