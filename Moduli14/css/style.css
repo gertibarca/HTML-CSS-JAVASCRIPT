@@ -1,0 +1,131 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+article {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+
+article p {
+    background: blue;
+    color: white;
+    padding: 20px;
+}
+
+article > p {
+    background: red;
+}
+
+article + p {
+    background: green;
+    color: white;
+    padding: 20px;
+}
+
+article ~ p {
+    background: orange;
+    color: white;
+    padding: 20px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #333;
+    text-align: left;
+}
+
+input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transition: border 0.3s ease, background-color 0.3s ease;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4A90E2;
+    background-color: #f0f8ff;
+}
+
+
+input:valid {
+    border-color: #4CAF50;
+    background-color: #e8f5e9;
+}
+
+input:invalid {
+    border-color: #f44336;
+    background-color: #ffe0e0;
+}
+
+
+input:in-range {
+    border-color: #4CAF50;
+}
+
+input:out-of-range {
+    border-color: #f44336;
+}
+
+
+input:required {
+    background-color: #e0f7fa;
+}
+
+
+.form-text {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+
+button {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+@media (max-width: 600px) {
+    article {
+        width: 90%;
+    }
+
+    label, input, button {
+        font-size: 1rem;
+    }
+}
+
