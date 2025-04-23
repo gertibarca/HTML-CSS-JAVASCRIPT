@@ -1,0 +1,50 @@
+div#static {
+    position: static;
+    border: 3px solid green;
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+
+
+}
+
+div#relative {
+    position: relative;
+    border: 3px solid red;
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    left: 200px;
+    top:20px;
+}
+
+
+div#fixed {
+    position: fixed;
+    border: 3px solid blue;
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    right: 200px;
+    bottom: 100px;
+}
+
+div#parent {
+    position: relative;
+    border: 3px solid black;
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+   
+    
+}
+
+div#absolute{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 80px;
+    top: 70px;
+    color: black;
+    background-color: aquamarine;
+}
