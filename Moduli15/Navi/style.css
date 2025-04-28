@@ -7,119 +7,177 @@
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     background-color: #f4f4f4;
 }
 
-nav {
-    background-color: #333;
-    padding: 15px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-nav ul {
+/* Horizontal Menu (Top Navigation) */
+#horizontal-menu {
     list-style-type: none;
     text-align: center;
+    background-color: #333;
+    margin: 0;
+    padding: 10px 0;
 }
 
-nav ul li {
+#horizontal-menu li {
     display: inline-block;
     margin: 0 20px;
 }
 
-nav ul li a {
-    color: #fff;
+#horizontal-menu a {
+    color: white;
     text-decoration: none;
     padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: 500;
+    font-size: 16px;
     text-transform: uppercase;
-    font-size: 14px;
-    transition: all 0.3s ease;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
 }
 
-nav ul li a.active {
+/* Active link for horizontal menu */
+#horizontal-menu a.active {
     background-color: #ff6f61;
-    color: #fff;
-    transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(255, 111, 97, 0.5);
+    color: white;
 }
 
-nav ul li a:hover:not(.active) {
-    background-color: #575757;
-    color: #ff6f61;
-    transform: translateY(-3px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-nav ul li a.active:hover {
-    background-color: #ff8f7f;
-    transform: scale(1.1) translateY(-3px);
-    box-shadow: 0 4px 12px rgba(255, 111, 97, 0.8);
-}
-
-/* Main Content Styling */
-#content {
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#content h1 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-#content p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.6;
-}
-
-h2 {
-    margin-top: 20px;
-    font-size: 1.5rem;
-    color: #333;
-}
-
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
-}
-
-/* Contact Form Styling */
-form {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-}
-
-form label {
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-form input,
-form textarea {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    padding: 10px;
+/* Hover effect for horizontal menu */
+#horizontal-menu a:hover {
     background-color: #ff6f61;
-    color: #fff;
+    color: white;
+}
+
+/* Navbar (Vertical menu and dropdown) */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+/* Active navbar item */
+.navbar a.active {
+    background-color: #ff6f61;
+    color: white;
+}
+
+/* Hover effect for navbar */
+.navbar a:hover {
+    background-color: #ff6f61;
+    color: white;
+}
+
+/* Dropdown Button Styling */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropbtn {
+    background-color: #333;
+    color: white;
+    padding: 14px 20px;
+    font-size: 16px;
     border: none;
-    border-radius: 5px;
+    text-transform: uppercase;
     cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
 }
 
-form button:hover {
-    background-color: #e15c52;
+/* Hover effect for dropdown button */
+.dropbtn:hover {
+    background-color: #ff6f61;
 }
 
+/* Dropdown Content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 300px;
+    z-index: 1;
+}
+
+/* Columns inside dropdown */
+.dropdown-content .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Columns inside dropdown */
+.dropdown-content .column {
+    width: 30%;
+}
+
+/* Links inside dropdown */
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 10px;
+    display: block;
+}
+
+/* Hover effect for dropdown links */
+.dropdown-content a:hover {
+    background-color: #ff6f61;
+}
+
+/* Show the dropdown content when hovering */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Vertical Menu Styling */
+#vertical-menu {
+    list-style-type: none;
+    width: 200px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #333;
+}
+
+#vertical-menu li {
+    margin-bottom: 10px;
+}
+
+#vertical-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+/* Active link for vertical menu */
+#vertical-menu a.active {
+    background-color: #ff6f61;
+    color: white;
+}
+
+/* Hover effect for vertical menu */
+#vertical-menu a:hover {
+    background-color: #ff6f61;
+    color: white;
+}
+
+/* Clearfix to ensure the navbar container clears both floated items */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

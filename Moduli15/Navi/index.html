@@ -1,127 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moduli - Home</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Main Content Section -->
-    <div id="content">
-        <h1>Welcome to Our CSS Positioning Tutorial!</h1>
-        <p>
-            This page demonstrates various CSS positioning techniques such as <strong>static</strong>, 
-            <strong>relative</strong>, <strong>fixed</strong>, and <strong>absolute</strong> positioning. 
-            Understanding how to position elements is crucial in web design, and this tutorial will show you how to 
-            use these methods to create sophisticated layouts.
-        </p>
-        
-        <p>
-            As you scroll down, you will see examples of each positioning type in action. These examples will help 
-            you understand how each type of positioning behaves, and where and why you might want to use each one in 
-            your web projects.
-        </p>
-        
-        <h2>What is CSS Positioning?</h2>
-        <p>
-            CSS positioning allows you to control the layout of elements on the page by setting their position in 
-            relation to their container or the viewport. There are different types of positioning, each serving 
-            a unique purpose:
-        </p>
-        <ul>
-            <li><strong>Static Positioning:</strong> The default positioning for elements. Elements are positioned 
-            based on the normal document flow.</li>
-            <li><strong>Relative Positioning:</strong> An element is positioned relative to its normal position 
-            in the document flow.</li>
-            <li><strong>Fixed Positioning:</strong> An element is fixed in place relative to the viewport and 
-            does not scroll with the page.</li>
-            <li><strong>Absolute Positioning:</strong> An element is positioned relative to its nearest positioned ancestor, 
-            or to the document body if no ancestor has a position.</li>
-        </ul>
-        
-        <h3>Static Positioning</h3>
-        <p>
-            Static positioning is the default setting for most HTML elements. When an element is statically positioned, 
-            it is placed according to the normal document flow, which means it appears where it naturally would based 
-            on the surrounding content.
-        </p>
-        <div id="static">
-            <h4>Static Positioning Example</h4>
-            <p>This div uses static positioning. It stays where it is in the flow of the document, and will not move or 
-            change unless affected by other layout properties.</p>
-        </div>
-        
-        <h3>Relative Positioning</h3>
-        <p>
-            When you use relative positioning, the element is positioned relative to where it would normally be in the document flow. 
-            It can be moved using properties like `top`, `right`, `bottom`, and `left`, but it will still take up space in the document, 
-            unlike fixed or absolute positioning.
-        </p>
-        <div id="relative">
-            <h4>Relative Positioning Example</h4>
-            <p>This div uses relative positioning. It’s moved 20px down from its original position in the document flow.</p>
-        </div>
-        
-        <h3>Fixed Positioning</h3>
-        <p>
-            Fixed positioning allows an element to stay in place even when the page is scrolled. The element will be positioned 
-            relative to the viewport, meaning it remains in the same spot even as the user scrolls through the page.
-        </p>
-        <div id="fixed">
-            <h4>Fixed Positioning Example</h4>
-            <p>This div uses fixed positioning. It stays in place even when you scroll the page.</p>
-        </div>
-        
-        <h3>Absolute Positioning</h3>
-        <p>
-            Absolute positioning places an element relative to its nearest positioned ancestor (a parent element that has any 
-            positioning other than `static`). If no ancestor has a position, it will be positioned relative to the document body.
-        </p>
-        <div id="parent">
-            <h4>Absolute Positioning Example</h4>
-            <p>This div is positioned inside a parent container with relative positioning. The child div uses absolute positioning.</p>
-            <div id="absolute">
-                <h5>Absolute Positioned Div</h5>
-                <p>This inner div uses absolute positioning and is placed inside a parent container.</p>
-            </div>
-        </div>
-        
-        <h2>When to Use Each Positioning Type</h2>
-        <p>
-            - Use <strong>static</strong> positioning when you want elements to flow naturally with the page layout (most common).<br>
-            - Use <strong>relative</strong> positioning when you want to adjust an element's position without affecting the layout around it.<br>
-            - Use <strong>fixed</strong> positioning for elements that should stay in the same spot on the screen regardless of scrolling, like navigation bars or floating buttons.<br>
-            - Use <strong>absolute</strong> positioning when you need precise control over an element's location within a parent container, especially when creating complex layouts.
-        </p>
-        
-        <h2>Additional CSS Layout Techniques</h2>
-        <p>
-            Besides positioning, there are other important layout techniques you should be familiar with, including:
-        </p>
-        <ul>
-            <li><strong>Flexbox:</strong> A layout model for aligning items in rows or columns with flexible widths and heights.</li>
-            <li><strong>Grid Layout:</strong> A two-dimensional layout system that lets you create complex grid structures.</li>
-            <li><strong>Float:</strong> An older method for aligning elements horizontally, though it’s generally replaced by Flexbox and Grid in modern web design.</li>
+<html>
+	<head>
+		<title>Lesson 15 - Pt2</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<ul id="horizontal-menu">
+		   <li><a class="active" href="#home">Home</a></li>
+		   <li><a href="#news">News</a></li>
+		   <li><a href="#contact">Contact</a></li>
+		   <li><a href="#about">About</a></li>
         </ul>
 
-        <h2>Conclusion</h2>
-        <p>
-            CSS positioning is essential for creating web layouts that are both flexible and visually appealing. Each positioning 
-            method has its own advantages and use cases. As you work with these techniques, you'll get a better understanding of 
-            how to use positioning effectively in real-world projects.
-        </p>
-    </div>
-</body>
+        <hr>
 
+        <div class="navbar">
+		  <a href="#home">Home</a>
+		  <a href="#news">News</a>
+		  <div class="dropdown">
+		    <button class="dropbtn">Dropdown</button>
+		    <div class="dropdown-content"> 
+		      <div class="row">
+		        <div class="column">
+		          <h3>Submenu 1</h3>
+		          <a href="#">Link 1</a>
+		          <a href="#">Link 2</a>
+		          <a href="#">Link 3</a>
+		        </div>
+		        <div class="column">
+		          <h3>Submenu 2</h3>
+		          <a href="#">Link 1</a>
+		          <a href="#">Link 2</a>
+		          <a href="#">Link 3</a>
+		        </div>
+		        <div class="column">
+		          <h3>Submenu 3</h3>
+		          <a href="#">Link 1</a>
+		          <a href="#">Link 2</a>
+		          <a href="#">Link 3</a>
+		        </div>
+		      </div>
+		    </div>
+		  </div> 
+        </div>
+		<br>
+
+         <hr>
+
+		 <ul id="vertical-menu">
+
+			<li><a class="active" href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#contact">Contact</a></li>
+
+		 </ul>
+
+
+
+
+
+
+
+
+	</body>
 </html>
