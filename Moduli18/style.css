@@ -1,0 +1,129 @@
+/* #translate {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    color: white;
+    background-color: blue;
+    transform: translate(100px, 50px); 
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#rotate {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    color: white;
+    background-color: blue;
+    transform: rotate(90deg); 
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#scale {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    color: white;
+    background-color: blue;
+    transform: scale(2, 2); 
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#scaleX {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    color: white;
+    background-color: blue;
+    transform: scaleX(3); 
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#scaleY {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    color: white;
+    background-color: blue;
+    transform: scaleY(3); 
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#skewX{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    color: white;
+    background-color: blue;
+    transform: skewX(-40deg);  
+     padding: 10px;
+    margin-bottom: 20px;
+} */
+
+#skewY {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    color: white;
+    background-color: blue;
+    transform: skewY(40deg);  
+    padding: 10px;
+    margin-bottom: 20px;
+} */
+
+/* New Transformations */
+#rotateX {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    color: white;
+    background-color: blue;
+    transform: rotateX(45deg);  /* Rotate along X axis */
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#rotateY {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    color: white;
+    background-color: blue;
+    transform: rotateY(45deg);  /* Rotate along Y axis */
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#rotateZ {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    color: white;
+    background-color: blue;
+    transform: rotateZ(45deg);  /* Rotate along Z axis */
+    padding: 10px;
+    margin-bottom: 20px;
+} */ */
+
+/* Styles for the figure and images */
+figure {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+figure img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+figcaption {
+    margin-top: 10px;
+    color: #333;
+    font-size: 14px;
+}
