@@ -1,0 +1,13 @@
+@media (min-width: 600px) {
+    body {
+        background-color: blue;
+        color: white;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        background-color: red;
+        color: black;
+    }
+}
