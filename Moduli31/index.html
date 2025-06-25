@@ -1,0 +1,68 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moduli 31</title>
+</head>
+<body>
+    <script src="js/main.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <title>Shto në Varg</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    #lista { margin-top: 10px; }
+  </style>
+</head>
+<body>
+
+  <h2>Shto vlera në varg</h2>
+
+  <input type="text" id="inputVlera" placeholder="Shkruaj një vlerë">
+  <button onclick="shtoNeVarg()">Shto</button>
+
+  <div id="lista">
+    <h3>Vlerat në varg:</h3>
+    <ul id="varguOutput"></ul>
+  </div>
+
+  <script>
+    // Krijojmë një varg bosh
+    var vargu = [];
+
+    function shtoNeVarg() {
+      // Marrim vlerën nga inputi
+      var vlera = document.getElementById("inputVlera").value;
+
+      // Shtojmë vlerën në varg vetëm nëse nuk është bosh
+      if (vlera !== "") {
+        vargu.push(vlera);
+
+        // Pastrojmë inputin
+        document.getElementById("inputVlera").value = "";
+
+        // Rifreskojmë listën në faqe
+        shfaqVargun();
+      }
+    }
+
+    function shfaqVargun() {
+      var lista = document.getElementById("varguOutput");
+      lista.innerHTML = ""; // Pastrojmë listën e vjetër
+
+      for (var i = 0; i < vargu.length; i++) {
+        var item = document.createElement("li");
+        item.textContent = vargu[i];
+        lista.appendChild(item);
+      }
+    }
+  </script>
+
+</body>
+</html>
