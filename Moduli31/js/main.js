@@ -35,3 +35,4 @@ function shfaqNumrat() {
 
 // Thërrasim funksionin
 shfaqNumrat();
+
