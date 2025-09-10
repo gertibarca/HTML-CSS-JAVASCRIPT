@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moduli33</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <form onsubmit="return validation();" method="POST">
+        <div class="name-container">
+            <label id="name_label" for="name">Name:</label>
+            <input type="text" name="name" id="name">
+            <span id="name_error">Please Enter a Valid Name</span>
+        </div>
+
+        <br>
+
+        <div class="age-container">
+            <label id="age_label" for="age">Age:</label>
+            <input type="text" name="age" id="age">
+            <span id="age_error">Please Enter a Valid Age</span>
+        </div>
+
+        <br>
+        <div class="city-container">
+            <label id="city_label" for="city">City:</label>
+            <select name="city" id="city">
+                <option value="" selected></option>
+                <option value="Prishtina">Prishtina</option>
+                <option value="Prizren">Prizren</option>
+                <option value="Gjilani">Gjilani</option>
+                <option value="Ferizaj">Ferizaj</option>
+            </select>
+            <span id="city_error">Please select a city</span>
+        </div>
+        <br>
+
+        <button type="submit" name="submit">Send</button>
+
+    </form>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
