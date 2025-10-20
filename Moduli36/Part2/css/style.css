@@ -1,0 +1,16 @@
+#square{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color: white;
+}
+
+.testing{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color: white;
+    position: relative;
+    left: 50px;
+    top: 50px;
+}
