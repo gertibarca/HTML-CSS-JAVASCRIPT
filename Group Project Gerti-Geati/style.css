@@ -1,0 +1,67 @@
+:root {
+    --barca-blue: #004d98;
+    --barca-red: #a50044;
+    --madrid-white: #ffffff;
+    --madrid-purple: #6f2877;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.clasico-bg {
+    background: linear-gradient(90deg, #004d98 0%, #a50044 100%);
+}
+
+.barca-bg {
+    background: linear-gradient(135deg, var(--barca-blue), var(--barca-red));
+}
+
+.madrid-bg {
+    background: linear-gradient(135deg, #f7f7f7, var(--madrid-purple));
+}
+
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+}
+
+.hamburger .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+    nav.nav-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #004d98;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        border-radius: 5px;
+        padding: 1rem;
+        width: 200px;
+    }
+    nav.nav-menu.active {
+        display: flex;
+    }
+    nav.nav-menu ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    nav.nav-menu ul li {
+        margin: 0;
+    }
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>El Clásico Rivalry</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-100">
+    <header class="clasico-bg text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path
+                        d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10S17.52,2,12,2z M12,20c-4.42,0-8-3.58-8-8s3.58-8,8-8s8,3.58,8,8
+                     S16.42,20,12,20z"
+                    />
+                    <path
+                        d="M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5S14.76,7,12,7z M12,16c-2.21,0-4-1.79-4-4s1.79-4,4-4s4,1.79,4,4
+                     S14.21,16,12,16z"
+                    />
+                </svg>
+                <h1 class="text-2xl font-bold">El Clásico</h1>
+            </div>
+
+            <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <nav class="nav-menu" id="navMenu" aria-label="Primary navigation">
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="nav-link hover:text-yellow-300">Home</a></li>
+                    <li><a href="#history" class="nav-link hover:text-yellow-300">History</a></li>
+                    <li><a href="#players" class="nav-link hover:text-yellow-300">Players</a></li>
+                    <li><a href="#stats" class="nav-link hover:text-yellow-300">Stats</a></li>
+                    <li><a href="#games" class="nav-link hover:text-yellow-300">Games</a></li>
+                    <li><a href="#contact" class="nav-link hover:text-yellow-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section id="home" class="mb-16">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">The Eternal Rivalry</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    FC Barcelona vs Real Madrid - More than just a football match,
+                    it's a clash of cultures, identities, and football philosophies.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="barca-bg text-white p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png"
+                            alt="Barcelona Crest"
+                            class="w-16 h-16 mr-4"
+                        />
+                        <h3 class="text-2xl font-bold">FC Barcelona</h3>
+                    </div>
+                    <p class="mb-4">
+                        Founded in 1899, FC Barcelona is more than a club ("Més que un
+                        club") with a rich history of beautiful football and Catalan
+                        identity.
+                    </p>
+                    <blockquote class="italic border-l-4 border-yellow-300 pl-4 mb-4">
+                        "We play football the way it should be played - with creativity,
+                        flair, and attacking intent."
+                    </blockquote>
+                    <cite class="block text-right">- Johan Cruyff</cite>
+                </div>
+
+                <div class="madrid-bg text-gray-800 p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/1200px-Real_Madrid_CF.svg.png"
+                            alt="Real Madrid Crest"
+                            class="w-16 h-16 mr-4"
+                        />
+                        <h3 class="text-2xl font-bold">Real Madrid CF</h3>
+                    </div>
+                    <p class="mb-4">
+                        Real Madrid, founded in 1902, is synonymous with success,
+                        boasting numerous trophies and a global fanbase that echoes
+                        prestige and ambition.
+                    </p>
+                    <blockquote class="italic border-l-4 border-purple-500 pl-4 mb-4">
+                        "We are Real Madrid. Excellence, passion, and winning is our
+                        tradition."
+                    </blockquote>
+                    <cite class="block text-right">- Alfredo Di Stéfano</cite>
+                </div>
+            </div>
+        </section>
+
+        <section id="history" class="mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-center">History of the Rivalry</h2>
+            <p class="text-gray-700 max-w-4xl mx-auto leading-relaxed mb-6">
+                The El Clásico rivalry dates back to the early 20th century and
+                symbolizes more than just football competition. It reflects
+                political, cultural, and regional tensions between Catalonia and
+                the Spanish capital. Matches are fiercely contested and watched
+                by millions globally.
+            </p>
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/El_Clásico_2018_03_04.jpg/1200px-El_Clásico_2018_03_04.jpg"
+                alt="El Clásico Match"
+                class="w-full rounded-lg shadow-lg"
+            />
+        </section>
+
+        <section id="players" class="mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-center">Players</h2>
+
+            <div class="text-center mb-8">
+                <button
+                    class="filter-btn bg-blue-600 text-white px-4 py-2 rounded mr-2"
+                    data-team="all"
+                >
+                    All
+                </button>
+                <button
+                    class="filter-btn bg-blue-600 text-white px-4 py-2 rounded mr-2"
+                    data-team="barca"
+                >
+                    FC Barcelona
+                </button>
+                <button
+                    class="filter-btn bg-purple-700 text-white px-4 py-2 rounded"
+                    data-team="madrid"
+                >
+                    Real Madrid
+                </button>
+            </div>
+
+            <div
+                id="playersGrid"
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+            >
+                
+            </div>
+        </section>
+
+        <section id="stats" class="mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-center">Match Stats</h2>
+            <div
+                class="bg-white rounded-lg shadow-lg p-8 max-w-4xl mx-auto text-center"
+            >
+                <p class="text-gray-700 mb-4">
+                    Total El Clásico matches played: <strong>280+</strong>
+                </p>
+                <p class="text-gray-700 mb-4">
+                    Barcelona wins: <strong>96</strong>
+                </p>
+                <p class="text-gray-700 mb-4">
+                    Real Madrid wins: <strong>100+</strong>
+                </p>
+                <p class="text-gray-700">
+                    Draws: <strong>80+</strong>
+                </p>
+            </div>
+        </section>
+
+        <section id="games" class="mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-center">Next El Clásico Countdown</h2>
+            <div
+                id="countdown"
+                class="text-4xl font-bold text-center text-red-600"
+                aria-live="polite"
+            >
+                Loading...
+            </div>
+        </section>
+
+        <section id="contact" class="mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-center">Contact</h2>
+            <form
+                class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-lg"
+                action="#"
+                method="POST"
+            >
+                <label class="block mb-2 font-semibold" for="name">Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="w-full p-2 border border-gray-300 rounded mb-4"
+                    required
+                />
+
+                <label class="block mb-2 font-semibold" for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="w-full p-2 border border-gray-300 rounded mb-4"
+                    required
+                />
+
+                <label class="block mb-2 font-semibold" for="message">Message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    class="w-full p-2 border border-gray-300 rounded mb-4"
+                    required
+                ></textarea>
+
+                <button
+                    type="submit"
+                    class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition"
+                >
+                    Send
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center p-4">
+        &copy; 2025 El Clásico Fan Page. All rights reserved.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
